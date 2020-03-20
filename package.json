@@ -1,0 +1,26 @@
+{
+  "name": "playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "syncBuild": "bash tools/update.sh",
+    "docker": "node docker/build.js",
+    "cross_build_docker": "CROSSBUILD=1 node docker/build.js",
+    "buildDocker": "DONTPUSH=1 node docker/build.js"
+  },
+  "docker_image_name": {
+    "amd64": "playground",
+    "arm64_v8": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanaltair/playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanaltair/playground/issues"
+  },
+  "homepage": "https://github.com/ryanaltair/playground#readme"
+}
